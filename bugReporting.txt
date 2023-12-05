@@ -1,0 +1,28 @@
+Bug Reporting. 
+
+Funcionalidad Afectada: Edición de Usuarios. Endopiont https://petstore.swagger.io/v2/user/username
+Stack: Backed
+Enviroment: Testing
+Bug Evidence: https://cloud.cypress.io/projects/7gxiqv/runs/2
+
+Descripcion del Defecto: Se observa que al enviar request para editar la informacion del un usuario no se actualzia. 
+Se envia la request a través del endpoint https://petstore.swagger.io/v2/user/username.
+
+Resultado Esperado: Se espera que al enviar request de edicion, el servicio retorne una repsuesta de status 200 y que la informaicion del usuario sea editada. 
+
+Reproduccion del Defecto: 
+
+Enviar la siguiente request y validar que las propiedades "firtName" y "email" no estan siendo actualizadas. 
+Se sugiere revisar el endpoint: https://petstore.swagger.io/v2/user/username
+
+Curl: 
+
+curl -X 'PUT' \
+  'https://petstore.swagger.io/v2/user/kervinn13' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+
+  "firstName": "Kervinn",
+  "email": "kervinnaguilera@devsu.com"
+}'

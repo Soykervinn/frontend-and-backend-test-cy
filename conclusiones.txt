@@ -1,0 +1,31 @@
+Test Result. 
+
+Herramienta de Pruebas: Cypress V13.6
+Framework: BDD
+Stack: Backend/Frontend
+Suite de Pruebas: 
+                Backend PetStore API
+                Frontend E2E Saucedemo.com
+
+Se ejecuta la suite de pruebas del Repositorio Devsu-QA Automation Engineer y se obtienen los siguientes resultados. 
+
+Backend: PetStore API
+
+- Alcance de la Ejecucion: Se ejecutaron 6 casos de pruebas: 5 Passed - 1 Failed. 
+
+Se detecta un bug, reportado oportunamente (ver bugReportin.txt).
+El defecto afecta la funcionalidad de Ediciond de Usuarios, la cual es una de las funionalidades primarias de un servicio. 
+Se estima de criticidad alta y se recomienda priorizar en la presente iteracion.
+
+- Puntos de Mejora: Se recomienda ir sumando casos de uso y escenarios border a la estrategia de Automatizacion. 
+Si no se cuenta con una estrategia de Calidad especifica orientada a la Performance y a los atributos no funcionales de la calidad, se recomienda empezar a validar tiempos de respues. 
+
+
+Fronted: Demo Blaze Shop.  
+
+- Alcance de la Ejecucion: Se ejecuta el test E2E de la UI https://www.demoblaze.com/. La web es un Ecommerce. 
+Se ejecutan dos escenarios de prueba, la creacion de usuario y una prueba E2E de un flujo de compra. 
+
+- Puntos de Mejora: En una segunda etapa, se recomienda explorar escenarios negativos y variaciones del flujo de compra. 
+
+Se deja link a Cypress Cloud con el Run: https://cloud.cypress.io/projects/7gxiqv/runs/2
