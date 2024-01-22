@@ -1,7 +1,8 @@
-const baseUrl = "https://petstore.swagger.io/v2"
+const baseUrl = "https://petstore.swagger.io/v2";
+import 'cypress-plugin-api';
 
 Cypress.Commands.add("createUser", () => {
-    cy.request({
+    cy.api({
         method: "POST",
         url: `${baseUrl}/user`,
         body: {
@@ -18,14 +19,14 @@ Cypress.Commands.add("createUser", () => {
 });
 
 Cypress.Commands.add("GetUserByUsername", (username) => {
-    cy.request({
+    cy.api({
         method: "GET",
         url: `${baseUrl}/user/${username}`,
     });
 });
 
 Cypress.Commands.add("UpdateUser", (username) => {
-    cy.request({
+    cy.api({
         method: "PUT",
         url: `${baseUrl}/user/${username}`,
         headers: {
@@ -40,7 +41,7 @@ Cypress.Commands.add("UpdateUser", (username) => {
 });
 
 Cypress.Commands.add("deleteUser", (username) => {
-    cy.request({
+    cy.api({
         method: "DELETE",
         url: `${baseUrl}/user/${username}`,
     });
@@ -50,7 +51,7 @@ Cypress.Commands.add("deleteUser", (username) => {
 //Tests Exploratorios
 
 Cypress.Commands.add("createWithArray", () => {
-    cy.request({
+    cy.api({
         method: "POST",
         url: `${baseUrl}/user/createWithArray`,
         body: [
@@ -79,7 +80,7 @@ Cypress.Commands.add("createWithArray", () => {
 });
 
 Cypress.Commands.add("loginUser", (username, password) => {
-    cy.request({
+    cy.api({
         method: "GET",
         url: `${baseUrl}/user/login/?username=${username}&password=${password}`,
     });

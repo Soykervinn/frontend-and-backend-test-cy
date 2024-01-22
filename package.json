@@ -15,5 +15,8 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "step_definitions": "cypress/e2e/integration"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
   }
 }
