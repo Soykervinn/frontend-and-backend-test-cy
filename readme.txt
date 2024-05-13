@@ -1,4 +1,4 @@
-Devsu-QA Automation Engineer. 
+Frontend and Backend Testing using Cypress Integrated with Cucumber. 
 
 Herramienta de Automatizacion: Cypress V13.6
 
